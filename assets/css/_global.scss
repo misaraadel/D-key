@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "LamaSans";
+    src: url('../fonts/LamaSans/LamaSans-Medium.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "LamaSans";
+    src: url('../fonts/LamaSans/LamaSans-Regular.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "LamaSans";
+    src: url('../fonts/LamaSans/LamaSans-Bold.ttf');
+    font-weight: 900;
+}
+
+:root{
+    --primary: #0F8F9E;
+    --secondary: #273B92;
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "LamaSans" , sans-serif ;
+    scroll-behavior: smooth;
+
+    &::selection{
+        background-color: #273B92;
+        color: #fff; 
+    }
+    
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #ccc;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg , #0F8F9E , #273B92); 
+        border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(180deg , #273B92 , #0F8F9E); ; 
+    }
+}
+
+.overflowNone{
+    overflow: hidden;
+}
+
+.btn:focus,
+button:focus,
+input:focus,
+.form-control:focus {
+    outline-width: 0px !important;
+    outline-color: transparent !important;
+    box-shadow: 0 0 0 0 rgba($color: #000000, $alpha: 0);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    width: 40px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--secondary);
+    opacity: .20;
+    transition: all .5s linear;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span{
+    background-color: var(--secondary);
+    opacity: 1;
+}
+
+.overflowNone{
+    overflow: hidden;
+}
+
